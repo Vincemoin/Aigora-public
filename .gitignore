@@ -1,0 +1,27 @@
+# Secrets -- niemals committen, leben nur in den Streamlit-Cloud-Secrets
+.env
+.streamlit/secrets.toml
+access_tokens_SECRETS.toml
+
+# Private Teilnehmer-Zuordnung -- niemals committen
+teilnehmer_links_PRIVAT.csv
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Lokale Reste (falls doch mal wieder lokal getestet wird)
+logs/
+dimension_analysis/
+test_runs/
+log_analysis_cache/
+session2_prep_cache/
+.DS_Store
+
+# Teilnehmer-/Studiendaten -- gehoeren NIE in dieses oeffentliche Repo,
+# egal ob lokal erzeugt beim Testen oder aus dem privaten Entwicklungs-Repo
+# kopiert (siehe SECURITY.md)
+data/
+extracted_profiles/
+extracted_synth_profiles/
